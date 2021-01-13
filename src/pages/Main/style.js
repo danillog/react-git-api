@@ -70,15 +70,18 @@ export const List = styled.ul`
   list-style: none;
   margin-top: 20px;
 
-  a{
-    padding: 15px 0;
+  li{
     display: flex;
     flex-direction: row;
-    align-tems: center;
-    justify-content: left;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    transition: 1s;
+  }
+
+  a{
     text-decoration: none;
     color: black;
-    transition: 1s;
   }
 
   a:hover{
@@ -101,4 +104,16 @@ export const List = styled.ul`
     }
   }
 
+`;
+
+export const DeleteButton = styled.button.attrs({
+  type: 'button'
+})`
+  margin-left  6px;
+  background: transparent;
+  color: #0d2636;
+  border: 0;
+  padding: 8x 7px;
+  outline: 0;
+  border-radius: 4px;
 `;
